@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
+section{
+    padding:2rem 7%;
+}
+nav p:hover,footer p:hover{
+    background-color:chocolate;
+ }
+ .ffl{
+    display: flex;
+    flex-direction: row;
+ }
+ .dl{
+    display: flex;
+    justify-content: space-between;
+ }
+ nav{
+    color: rgb(24, 24, 24);
+    background-color: rgb(255, 191, 105);
+ }
+ nav p,footer p, .texta p, .rb center p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem;
+    color:rgb(0, 0, 0);
+ }
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../images/images/background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#eee;
+}
+
+footer{
+    color: white;
+    background-color: rgb(95, 95, 95);
+    display: flex;
+    justify-content: space-between;
+ }
+.mp5{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ .footer{
+    text-align: center;
+}
+
+.akhir{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background:url(../images/images/bg-grid.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.akhir h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    padding:1rem;
+    color:rgb(0, 0, 0);
+}
+.akhir p{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding:1rem;
+    color:rgb(0, 0, 0);
+}
+.akhir .gambar img{
+   width: 20vw;
+}
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media screen and (max-width:780px)
+{
+   .home
+   {
+      background-size: auto;
+      min-height: min-content;
+   }
+   .ffl,.dl
+   {
+      background-color: aliceblue;
+       flex-direction: column;
+   }
+   footer{
+      flex-direction: column;
+   }
+   .akhir{
+    display: block;
+    min-height: min-content;
+   }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
